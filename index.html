@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="mx-auto" style="width: 1000px">
+    <div class="container mt-5">
+      <select
+        class="form-select de-bai"
+        onchange="handleSelectionChange()"
+        aria-label="Chọn đề bài"
+      >
+        <option selected>Chọn đề bài</option>
+        <option value="item1">Bài 1: Tổng các số dương trong mảng</option>
+        <option value="item2">
+          Bài 2: Điếm có bao nhiêu số dương trong mảng
+        </option>
+        <option value="item3">Bài 3: Tìm số nhỏ nhất trong mảng</option>
+        <option value="item4">Bài 4: Tìm số dương nhỏ nhất trong mảng</option>
+        <option value="item5">
+          Bài 5: Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị
+          chẵn thì trả về -1
+        </option>
+        <option value="item6">
+          Bài 6: Đổi chỗ 2 giá trị trong mảng theo vị trí (cho nhập vào 2 vị trí
+          muốn đổi chỗ giá trị)
+        </option>
+        <option value="item7">Bài 7: Sắp xếp mảng theo giá trị tăng dần</option>
+        <option value="item8">
+          Bài 8: Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số
+          nguyên tố thì trả về -1
+        </option>
+        <option value="item9">
+          Bài 9: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số
+          nguyên?
+        </option>
+        <option value="item10">
+          Bài 10: So sánh số lượng số dương và số lượng số âm xem số nào nhiều
+          hơn
+        </option>
+      </select>
+
+      <div class="col-auto mt-4">
+        <label class="form-label font-weight-bold">Array</label>
+        <input
+          type="text"
+          class="form-control number-input"
+          placeholder="Nhập số cách nhau bằng khoảng trắng"
+        />
+      </div>
+
+      <div class="bt-6" style="display:none">
+        <div class="col-auto mt-4">
+          <label class="form-label font-weight-bold">Vị trí hiện tại (Vị trí đầu tiên bắt đầu từ 0)</label>
+          <input
+            type="number"
+            class="form-control number-input vi-tri-cu"
+            placeholder="Nhập vị trí số muốn đổi"
+          />
+        </div>
+
+        <div class="col-auto mt-4">
+          <label class="form-label font-weight-bold">Vị trí mới</label>
+          <input
+            type="number"
+            class="form-control number-input vi-tri-moi"
+            placeholder="Nhập vị trí mới"
+          />
+        </div>
+      </div>
+
+      <div class="col-auto mt-3">
+        <button class="btn btn-primary" onclick="handleArrayInput()">
+          Submit
+        </button>
+      </div>
+      <div class="col-auto mt-3 mb-4">
+        <label class="form-label font-weight-bold">Kết Quả</label>
+        <input type="" class="form-control ket-qua" placeholder="Kết quả" disabled/>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/exercise.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
